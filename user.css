@@ -8,7 +8,7 @@
 /*Thinner scrollbar*/
 ::-webkit-scrollbar {
 	height: 6px !important;
-	width: 12px !important;
+	width: 6px !important;
 }
 
 ::-webkit-scrollbar-thumb {
