@@ -40,3 +40,6 @@
 .button.button-green {
 	color: var(--modspotify_dark_text);
 }
+.button.button-green.contextmenu-active, .button.button-green:not(:disabled):hover {
+	color: var(--modspotify_dark_text);
+}
