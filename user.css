@@ -1,0 +1,42 @@
+/* Custom colours */
+:root {
+	--modspotify_dark_text: #1E1E3F;
+	--modspotify_scrollbar: #a599e981;
+}
+
+
+/*Thinner scrollbar*/
+::-webkit-scrollbar {
+	height: 6px !important;
+	width: 12px !important;
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: var(--modspotify_scrollbar);
+}
+
+::-webkit-scrollbar-track {
+	background-color: transparent;
+}
+
+/* Text on remote playback bar */
+#remote-playback-bar span {
+	color: var(--modspotify_dark_text);
+}
+
+/* Gradient overlay at top of page */
+.Header__background-color {
+	background-color: var(--modspotify_sidebar_and_player_bg) !important;
+}
+
+/* Fix odd-coloured shuffle and connect :active:hover colour */
+.view-player .player-controls-container .controls .button-repeat.active:not(:disabled):hover:active, .view-player .player-controls-container .controls .button-shuffle.active:not(:disabled):hover:active, .view-player .player-controls-container .controls .button-thumbs-down.active:not(:disabled):hover:active, .view-player .player-controls-container .controls .button-thumbs-up.active:not(:disabled):hover:active {
+	/* It was the 'selected' button colour */
+	/* color: var(--modspotify_selected_button); */
+	color: var(--modspotify_secondary_fg);
+}
+
+/* Fixes white text on yellow buttons */
+.button.button-green {
+	color: var(--modspotify_dark_text);
+}
