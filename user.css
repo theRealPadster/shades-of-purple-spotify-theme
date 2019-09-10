@@ -14,6 +14,12 @@
 ::-webkit-scrollbar-thumb {
 	background-color: var(--modspotify_scrollbar);
 }
+::-webkit-scrollbar-thumb:hover {
+	background-color: #4D21FC;
+}
+::-webkit-scrollbar-thumb:active {
+	background-color: #FAD000;
+}
 
 ::-webkit-scrollbar-track {
 	background-color: transparent;
@@ -42,4 +48,38 @@
 }
 .button.button-green.contextmenu-active, .button.button-green:not(:disabled):hover {
 	color: var(--modspotify_dark_text);
+}
+
+.context-menu,
+.profile-menu {
+	background-color: #212542;
+	box-shadow: 0px 1px 3px 0px rgba(var(--modspotify_rgb_cover_overlay_and_shadow),.5);
+	border-radius: 0;
+}
+
+input[type="search"] {
+	background-color: #2C2F52;
+	border: 1px solid #212542;
+	border-radius: 0 !important;
+	padding: 0 0 0 24px;
+	color: #FAD000;
+}
+
+input[type="search"]::placeholder {
+	color: #A1A0E4;
+}
+
+.SearchInput__searchIcon {
+	color: #9797A2;
+}
+
+/* Fix Explicit label */
+.tl-explicit .label, .tl-premium .label {
+	color: var(--modspotify_secondary_fg);
+	border-color: var(--modspotify_scrollbar_fg_and_selected_row_bg) !important;
+	border-radius: 0;
+}
+/* TODO: Hover/Focus still doesn't look that great... */
+.tl-row:hover .tl-explicit .label, .tl-row:hover .tl-premium .label, .tl-row.selection-focus .tl-explicit .label, .tl-row.selection-focus .tl-premium .label {
+	border-color: var(--modspotify_scrollbar_fg_and_selected_row_bg) !important;
 }
