@@ -30,10 +30,6 @@
 	color: var(--modspotify_dark_text);
 }
 
-/* Gradient overlay at top of page */
-.Header__background-color {
-	background-color: var(--modspotify_sidebar_and_player_bg) !important;
-}
 
 /* Fix odd-coloured shuffle and connect :active:hover colour */
 .view-player .player-controls-container .controls .button-repeat.active:not(:disabled):hover:active, .view-player .player-controls-container .controls .button-shuffle.active:not(:disabled):hover:active, .view-player .player-controls-container .controls .button-thumbs-down.active:not(:disabled):hover:active, .view-player .player-controls-container .controls .button-thumbs-up.active:not(:disabled):hover:active {
@@ -82,4 +78,15 @@ input[type="search"]::placeholder {
 /* TODO: Hover/Focus still doesn't look that great... */
 .tl-row:hover .tl-explicit .label, .tl-row:hover .tl-premium .label, .tl-row.selection-focus .tl-explicit .label, .tl-row.selection-focus .tl-premium .label {
 	border-color: var(--modspotify_scrollbar_fg_and_selected_row_bg) !important;
+}
+
+/* Toggle switch (For playlist download, etc) */
+.slider {
+	background-color: var(--modspotify_main_bg);
+	border-color: transparent;
+}
+
+/* Gradient overlay at top of page */
+.Header__background-color, .glue-page-header__background-color {
+	background-image: linear-gradient(to bottom, var(--modspotify_sidebar_and_player_bg), #2D2B55) !important;
 }
