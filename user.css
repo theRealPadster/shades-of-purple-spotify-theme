@@ -32,7 +32,10 @@
 
 
 /* Fix odd-coloured shuffle and connect :active:hover colour */
-.view-player .player-controls-container .controls .button-repeat.active:not(:disabled):hover:active, .view-player .player-controls-container .controls .button-shuffle.active:not(:disabled):hover:active, .view-player .player-controls-container .controls .button-thumbs-down.active:not(:disabled):hover:active, .view-player .player-controls-container .controls .button-thumbs-up.active:not(:disabled):hover:active {
+.view-player .player-controls-container .controls .button-repeat.active:not(:disabled):hover:active,
+.view-player .player-controls-container .controls .button-shuffle.active:not(:disabled):hover:active,
+.view-player .player-controls-container .controls .button-thumbs-down.active:not(:disabled):hover:active,
+.view-player .player-controls-container .controls .button-thumbs-up.active:not(:disabled):hover:active {
 	/* It was the 'selected' button colour */
 	/* color: var(--modspotify_selected_button); */
 	color: var(--modspotify_secondary_fg);
@@ -42,7 +45,8 @@
 .button.button-green {
 	color: var(--modspotify_dark_text);
 }
-.button.button-green.contextmenu-active, .button.button-green:not(:disabled):hover {
+.button.button-green.contextmenu-active,
+.button.button-green:not(:disabled):hover {
 	color: var(--modspotify_dark_text);
 }
 
@@ -89,4 +93,15 @@ input[type="search"]::placeholder {
 /* Gradient overlay at top of page */
 .Header__background-color, .glue-page-header__background-color {
 	background-image: linear-gradient(to bottom, var(--modspotify_sidebar_and_player_bg), #2D2B55) !important;
+}
+
+/* Text on "follow/unfollow" buttons */
+.added .button-add:not(.button-icon-only):not(.button-icon-with-stroke),
+.button-add.added:not(.button-icon-only):not(.button-icon-with-stroke),
+/* Text on "follow/unfollow" buttons:hover */
+.added .button-add:not(.button-icon-only):not(.button-icon-with-stroke).contextmenu-active,
+.added .button-add:not(.button-icon-only):not(.button-icon-with-stroke):not(:disabled):hover,
+.button-add.added:not(.button-icon-only):not(.button-icon-with-stroke).contextmenu-active,
+.button-add.added:not(.button-icon-only):not(.button-icon-with-stroke):not(:disabled):hover {
+	color: var(--modspotify_main_fg);
 }
