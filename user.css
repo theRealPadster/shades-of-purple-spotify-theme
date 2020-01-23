@@ -42,7 +42,8 @@
 }
 
 /* Fixes white text on yellow buttons */
-.button.button-green {
+.button.button-green,
+.Button--style-green {
 	color: var(--modspotify_dark_text);
 }
 .button.button-green.contextmenu-active,
@@ -105,3 +106,11 @@ input[type="search"]::placeholder {
 .button-add.added:not(.button-icon-only):not(.button-icon-with-stroke):not(:disabled):hover {
 	color: var(--modspotify_main_fg);
 }
+
+/* TODO: I think I actually like it better without the yellow...
+TODO: I forget what this even does now...
+.nft-enabled .view-player .now-playing-container .button-add.added,
+.nft-enabled .view-player .now-playing-container .button-add.added:not(:disabled):hover {
+	color: var(--modspotify_sidebar_indicator_and_hover_button_bg);
+}
+*/
