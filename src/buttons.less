@@ -35,3 +35,15 @@ button[data-button=add-recommendation] {
 	background-color: var(--modspotify_main_bg);
 	border-color: transparent;
 }
+
+// 'Learn more' button
+.button.button-blue {
+  color: var(--modspotify_dark_text);
+  background-color: var(--modspotify_indicator_fg_and_button_bg);
+
+  &:not(:disabled):hover {
+    transform: scale(1.07143);
+    color: var(--modspotify_dark_text);
+    background-color: var(--modspotify_indicator_fg_and_button_bg);
+  }
+}

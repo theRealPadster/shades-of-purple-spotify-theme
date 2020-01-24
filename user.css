@@ -76,6 +76,15 @@ TODO: I forget what this even does now...
   background-color: var(--modspotify_main_bg);
   border-color: transparent;
 }
+.button.button-blue {
+  color: var(--modspotify_dark_text);
+  background-color: var(--modspotify_indicator_fg_and_button_bg);
+}
+.button.button-blue:not(:disabled):hover {
+  transform: scale(1.07143);
+  color: var(--modspotify_dark_text);
+  background-color: var(--modspotify_indicator_fg_and_button_bg);
+}
 
 .button.button-green,
 .Button--style-green {
