@@ -12,19 +12,23 @@
 }
 
 ::-webkit-scrollbar-thumb {
-	background-color: var(--modspotify_scrollbar);
+	background-color: var(--modspotify_scrollbar) !important;
 
 	&:hover {
-		background-color: #4D21FC;
+		background-color: #4D21FC !important;
 	}
 
 	&:active {
-		background-color: #FAD000;
+		background-color: #FAD000 !important;
 	}
 }
 
 ::-webkit-scrollbar-track {
 	background-color: transparent;
+}
+
+::-webkit-scrollbar-button {
+	height: 0 !important;
 }
 
 // Gradient overlay at top of page
