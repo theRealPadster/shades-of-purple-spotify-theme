@@ -18,21 +18,11 @@
 ::-webkit-scrollbar-track {
   background-color: transparent;
 }
+.Header__background-color,
+.glue-page-header__background-color {
+  background-image: linear-gradient(to bottom, var(--modspotify_sidebar_and_player_bg), #2D2B55) !important;
+}
 #remote-playback-bar span {
-  color: var(--modspotify_dark_text);
-}
-.view-player .player-controls-container .controls .button-repeat.active:not(:disabled):hover:active,
-.view-player .player-controls-container .controls .button-shuffle.active:not(:disabled):hover:active,
-.view-player .player-controls-container .controls .button-thumbs-down.active:not(:disabled):hover:active,
-.view-player .player-controls-container .controls .button-thumbs-up.active:not(:disabled):hover:active {
-  color: var(--modspotify_secondary_fg);
-}
-.button.button-green,
-.Button--style-green {
-  color: var(--modspotify_dark_text);
-}
-.button.button-green.contextmenu-active,
-.button.button-green:not(:disabled):hover {
   color: var(--modspotify_dark_text);
 }
 .context-menu,
@@ -54,26 +44,14 @@ input[type="search"]::placeholder {
 .SearchInput__searchIcon {
   color: #9797A2;
 }
-.tl-explicit .label,
-.tl-premium .label {
-  color: var(--modspotify_secondary_fg);
-  border-color: var(--modspotify_scrollbar_fg_and_selected_row_bg) !important;
-  border-radius: 0;
+/* TODO: I think I actually like it better without the yellow...
+TODO: I forget what this even does now...
+.nft-enabled .view-player .now-playing-container .button-add.added,
+.nft-enabled .view-player .now-playing-container .button-add.added:not(:disabled):hover {
+	color: var(--modspotify_sidebar_indicator_and_hover_button_bg);
 }
-.tl-row:hover .tl-explicit .label,
-.tl-row:hover .tl-premium .label,
-.tl-row.selection-focus .tl-explicit .label,
-.tl-row.selection-focus .tl-premium .label {
-  border-color: var(--modspotify_scrollbar_fg_and_selected_row_bg) !important;
-}
-.slider {
-  background-color: var(--modspotify_main_bg);
-  border-color: transparent;
-}
-.Header__background-color,
-.glue-page-header__background-color {
-  background-image: linear-gradient(to bottom, var(--modspotify_sidebar_and_player_bg), #2D2B55) !important;
-}
+*/
+
 .added .button-add:not(.button-icon-only):not(.button-icon-with-stroke),
 .button-add.added:not(.button-icon-only):not(.button-icon-with-stroke),
 .added .button-add:not(.button-icon-only):not(.button-icon-with-stroke).contextmenu-active,
@@ -94,10 +72,34 @@ input[type="search"]::placeholder {
   background-color: var(--modspotify_indicator_fg_and_button_bg);
   color: var(--modspotify_dark_text);
 }
-/* TODO: I think I actually like it better without the yellow...
-TODO: I forget what this even does now...
-.nft-enabled .view-player .now-playing-container .button-add.added,
-.nft-enabled .view-player .now-playing-container .button-add.added:not(:disabled):hover {
-	color: var(--modspotify_sidebar_indicator_and_hover_button_bg);
+.slider {
+  background-color: var(--modspotify_main_bg);
+  border-color: transparent;
 }
-*/
+
+.button.button-green,
+.Button--style-green {
+  color: var(--modspotify_dark_text);
+}
+.button.button-green.contextmenu-active,
+.button.button-green:not(:disabled):hover {
+  color: var(--modspotify_dark_text);
+}
+.view-player .player-controls-container .controls .button-repeat.active:not(:disabled):hover:active,
+.view-player .player-controls-container .controls .button-shuffle.active:not(:disabled):hover:active,
+.view-player .player-controls-container .controls .button-thumbs-down.active:not(:disabled):hover:active,
+.view-player .player-controls-container .controls .button-thumbs-up.active:not(:disabled):hover:active {
+  color: var(--modspotify_secondary_fg);
+}
+.tl-explicit .label,
+.tl-premium .label {
+  color: var(--modspotify_secondary_fg);
+  border-color: var(--modspotify_scrollbar_fg_and_selected_row_bg) !important;
+  border-radius: 0;
+}
+.tl-row:hover .tl-explicit .label,
+.tl-row:hover .tl-premium .label,
+.tl-row.selection-focus .tl-explicit .label,
+.tl-row.selection-focus .tl-premium .label {
+  border-color: var(--modspotify_scrollbar_fg_and_selected_row_bg) !important;
+}

@@ -1,0 +1,37 @@
+// Text on "follow/unfollow" buttons
+.added .button-add:not(.button-icon-only):not(.button-icon-with-stroke),
+.button-add.added:not(.button-icon-only):not(.button-icon-with-stroke),
+// Text on "follow/unfollow" buttons:hover
+.added .button-add:not(.button-icon-only):not(.button-icon-with-stroke).contextmenu-active,
+.added .button-add:not(.button-icon-only):not(.button-icon-with-stroke):not(:disabled):hover,
+.button-add.added:not(.button-icon-only):not(.button-icon-with-stroke).contextmenu-active,
+.button-add.added:not(.button-icon-only):not(.button-icon-with-stroke):not(:disabled):hover {
+	color: var(--modspotify_main_fg);
+}
+
+// Recommendation buttons
+button[data-button=add-recommendation] {
+	// background-color: var(--modspotify_indicator_fg_and_button_bg);
+}
+// Button in hover row
+.tracklist-album, .tracklist-chart, .tracklist-basic,
+.tracklist-playlist, .tracklist-podcast, .tracklist-popular,
+.tracklist-station, .tracklist-queue, .tracklist-search {
+	tr:hover button[data-button=add-recommendation] {
+		background-color: var(--modspotify_indicator_fg_and_button_bg);
+		color: var(--modspotify_dark_text);
+	}
+}
+// Recommendation buttons:hover
+button[data-button=add-recommendation] {
+	&.contextmenu-active,
+	&:not(:disabled):hover {
+		// background-color: red;
+	}
+}
+
+// Toggle switch (For playlist download, etc)
+.slider {
+	background-color: var(--modspotify_main_bg);
+	border-color: transparent;
+}
