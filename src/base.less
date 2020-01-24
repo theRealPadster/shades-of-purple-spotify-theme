@@ -1,11 +1,11 @@
-/* Custom colours */
+// Custom colours
 :root {
 	--modspotify_dark_text: #1E1E3F;
 	--modspotify_scrollbar: #a599e981;
 }
 
 
-/*Thinner scrollbar*/
+// Thinner scrollbar
 ::-webkit-scrollbar {
 	height: 6px !important;
 	width: 6px !important;
@@ -27,23 +27,23 @@
 	background-color: transparent;
 }
 
-/* Text on remote playback bar */
+// Text on remote playback bar
 #remote-playback-bar span {
 	color: var(--modspotify_dark_text);
 }
 
 
-/* Fix odd-coloured shuffle and connect :active:hover colour */
+// Fix odd-coloured shuffle and connect :active:hover colour
 .view-player .player-controls-container .controls .button-repeat.active:not(:disabled):hover:active,
 .view-player .player-controls-container .controls .button-shuffle.active:not(:disabled):hover:active,
 .view-player .player-controls-container .controls .button-thumbs-down.active:not(:disabled):hover:active,
 .view-player .player-controls-container .controls .button-thumbs-up.active:not(:disabled):hover:active {
-	/* It was the 'selected' button colour */
-	/* color: var(--modspotify_selected_button); */
+	// It was the 'selected' button colour
+	// color: var(--modspotify_selected_button);
 	color: var(--modspotify_secondary_fg);
 }
 
-/* Fixes white text on yellow buttons */
+// Fixes white text on yellow buttons
 .button.button-green,
 .Button--style-green {
 	color: var(--modspotify_dark_text);
@@ -76,32 +76,32 @@ input[type="search"] {
 	color: #9797A2;
 }
 
-/* Fix Explicit label */
+// Fix Explicit label
 .tl-explicit .label, .tl-premium .label {
 	color: var(--modspotify_secondary_fg);
 	border-color: var(--modspotify_scrollbar_fg_and_selected_row_bg) !important;
 	border-radius: 0;
 }
-/* TODO: Hover/Focus still doesn't look that great... */
+// TODO: Hover/Focus still doesn't look that great...
 .tl-row:hover .tl-explicit .label, .tl-row:hover .tl-premium .label, .tl-row.selection-focus .tl-explicit .label, .tl-row.selection-focus .tl-premium .label {
 	border-color: var(--modspotify_scrollbar_fg_and_selected_row_bg) !important;
 }
 
-/* Toggle switch (For playlist download, etc) */
+// Toggle switch (For playlist download, etc)
 .slider {
 	background-color: var(--modspotify_main_bg);
 	border-color: transparent;
 }
 
-/* Gradient overlay at top of page */
+// Gradient overlay at top of page
 .Header__background-color, .glue-page-header__background-color {
 	background-image: linear-gradient(to bottom, var(--modspotify_sidebar_and_player_bg), #2D2B55) !important;
 }
 
-/* Text on "follow/unfollow" buttons */
+// Text on "follow/unfollow" buttons
 .added .button-add:not(.button-icon-only):not(.button-icon-with-stroke),
 .button-add.added:not(.button-icon-only):not(.button-icon-with-stroke),
-/* Text on "follow/unfollow" buttons:hover */
+// Text on "follow/unfollow" buttons:hover
 .added .button-add:not(.button-icon-only):not(.button-icon-with-stroke).contextmenu-active,
 .added .button-add:not(.button-icon-only):not(.button-icon-with-stroke):not(:disabled):hover,
 .button-add.added:not(.button-icon-only):not(.button-icon-with-stroke).contextmenu-active,
@@ -109,24 +109,25 @@ input[type="search"] {
 	color: var(--modspotify_main_fg);
 }
 
-/* Recommendation buttons */
+// Recommendation buttons
 button[data-button=add-recommendation] {
-	background-color: var(--modspotify_indicator_fg_and_button_bg);
+	// background-color: var(--modspotify_indicator_fg_and_button_bg);
 }
-
-
+// Button in hover row
 .tracklist-album, .tracklist-chart, .tracklist-basic,
 .tracklist-playlist, .tracklist-podcast, .tracklist-popular,
 .tracklist-station, .tracklist-queue, .tracklist-search {
-	tr {
-		background-color: blue;
+	tr:hover button[data-button=add-recommendation] {
+		background-color: var(--modspotify_indicator_fg_and_button_bg);
+		color: var(--modspotify_dark_text);
 	}
 }
-
-/* Recommendation buttons:hover */
-button[data-button=add-recommendation].contextmenu-active,
-button[data-button=add-recommendation]:not(:disabled):hover {
-
+// Recommendation buttons:hover
+button[data-button=add-recommendation] {
+	&.contextmenu-active,
+	&:not(:disabled):hover {
+		// background-color: red;
+	}
 }
 
 /* TODO: I think I actually like it better without the yellow...

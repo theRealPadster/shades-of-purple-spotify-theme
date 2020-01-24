@@ -1,9 +1,7 @@
-/* Custom colours */
 :root {
   --modspotify_dark_text: #1E1E3F;
   --modspotify_scrollbar: #a599e981;
 }
-/*Thinner scrollbar*/
 ::-webkit-scrollbar {
   height: 6px !important;
   width: 6px !important;
@@ -20,20 +18,15 @@
 ::-webkit-scrollbar-track {
   background-color: transparent;
 }
-/* Text on remote playback bar */
 #remote-playback-bar span {
   color: var(--modspotify_dark_text);
 }
-/* Fix odd-coloured shuffle and connect :active:hover colour */
 .view-player .player-controls-container .controls .button-repeat.active:not(:disabled):hover:active,
 .view-player .player-controls-container .controls .button-shuffle.active:not(:disabled):hover:active,
 .view-player .player-controls-container .controls .button-thumbs-down.active:not(:disabled):hover:active,
 .view-player .player-controls-container .controls .button-thumbs-up.active:not(:disabled):hover:active {
-  /* It was the 'selected' button colour */
-  /* color: var(--modspotify_selected_button); */
   color: var(--modspotify_secondary_fg);
 }
-/* Fixes white text on yellow buttons */
 .button.button-green,
 .Button--style-green {
   color: var(--modspotify_dark_text);
@@ -61,31 +54,26 @@ input[type="search"]::placeholder {
 .SearchInput__searchIcon {
   color: #9797A2;
 }
-/* Fix Explicit label */
 .tl-explicit .label,
 .tl-premium .label {
   color: var(--modspotify_secondary_fg);
   border-color: var(--modspotify_scrollbar_fg_and_selected_row_bg) !important;
   border-radius: 0;
 }
-/* TODO: Hover/Focus still doesn't look that great... */
 .tl-row:hover .tl-explicit .label,
 .tl-row:hover .tl-premium .label,
 .tl-row.selection-focus .tl-explicit .label,
 .tl-row.selection-focus .tl-premium .label {
   border-color: var(--modspotify_scrollbar_fg_and_selected_row_bg) !important;
 }
-/* Toggle switch (For playlist download, etc) */
 .slider {
   background-color: var(--modspotify_main_bg);
   border-color: transparent;
 }
-/* Gradient overlay at top of page */
 .Header__background-color,
 .glue-page-header__background-color {
   background-image: linear-gradient(to bottom, var(--modspotify_sidebar_and_player_bg), #2D2B55) !important;
 }
-/* Text on "follow/unfollow" buttons */
 .added .button-add:not(.button-icon-only):not(.button-icon-with-stroke),
 .button-add.added:not(.button-icon-only):not(.button-icon-with-stroke),
 .added .button-add:not(.button-icon-only):not(.button-icon-with-stroke).contextmenu-active,
@@ -94,22 +82,18 @@ input[type="search"]::placeholder {
 .button-add.added:not(.button-icon-only):not(.button-icon-with-stroke):not(:disabled):hover {
   color: var(--modspotify_main_fg);
 }
-/* Recommendation buttons */
-button[data-button=add-recommendation] {
+.tracklist-album tr:hover button[data-button=add-recommendation],
+.tracklist-chart tr:hover button[data-button=add-recommendation],
+.tracklist-basic tr:hover button[data-button=add-recommendation],
+.tracklist-playlist tr:hover button[data-button=add-recommendation],
+.tracklist-podcast tr:hover button[data-button=add-recommendation],
+.tracklist-popular tr:hover button[data-button=add-recommendation],
+.tracklist-station tr:hover button[data-button=add-recommendation],
+.tracklist-queue tr:hover button[data-button=add-recommendation],
+.tracklist-search tr:hover button[data-button=add-recommendation] {
   background-color: var(--modspotify_indicator_fg_and_button_bg);
+  color: var(--modspotify_dark_text);
 }
-.tracklist-album tr,
-.tracklist-chart tr,
-.tracklist-basic tr,
-.tracklist-playlist tr,
-.tracklist-podcast tr,
-.tracklist-popular tr,
-.tracklist-station tr,
-.tracklist-queue tr,
-.tracklist-search tr {
-  background-color: blue;
-}
-/* Recommendation buttons:hover */
 /* TODO: I think I actually like it better without the yellow...
 TODO: I forget what this even does now...
 .nft-enabled .view-player .now-playing-container .button-add.added,
@@ -117,128 +101,3 @@ TODO: I forget what this even does now...
 	color: var(--modspotify_sidebar_indicator_and_hover_button_bg);
 }
 */
-
-/* Custom colours */
-:root {
-  --modspotify_dark_text: #1E1E3F;
-  --modspotify_scrollbar: #a599e981;
-}
-/*Thinner scrollbar*/
-::-webkit-scrollbar {
-  height: 6px !important;
-  width: 6px !important;
-}
-::-webkit-scrollbar-thumb {
-  background-color: var(--modspotify_scrollbar);
-}
-::-webkit-scrollbar-thumb:hover {
-  background-color: #4D21FC;
-}
-::-webkit-scrollbar-thumb:active {
-  background-color: #FAD000;
-}
-::-webkit-scrollbar-track {
-  background-color: transparent;
-}
-/* Text on remote playback bar */
-#remote-playback-bar span {
-  color: var(--modspotify_dark_text);
-}
-/* Fix odd-coloured shuffle and connect :active:hover colour */
-.view-player .player-controls-container .controls .button-repeat.active:not(:disabled):hover:active,
-.view-player .player-controls-container .controls .button-shuffle.active:not(:disabled):hover:active,
-.view-player .player-controls-container .controls .button-thumbs-down.active:not(:disabled):hover:active,
-.view-player .player-controls-container .controls .button-thumbs-up.active:not(:disabled):hover:active {
-  /* It was the 'selected' button colour */
-  /* color: var(--modspotify_selected_button); */
-  color: var(--modspotify_secondary_fg);
-}
-/* Fixes white text on yellow buttons */
-.button.button-green,
-.Button--style-green {
-  color: var(--modspotify_dark_text);
-}
-.button.button-green.contextmenu-active,
-.button.button-green:not(:disabled):hover {
-  color: var(--modspotify_dark_text);
-}
-.context-menu,
-.profile-menu {
-  background-color: #212542;
-  box-shadow: 0px 1px 3px 0px rgba(var(--modspotify_rgb_cover_overlay_and_shadow), 0.5);
-  border-radius: 0;
-}
-input[type="search"] {
-  background-color: #2C2F52;
-  border: 1px solid #212542;
-  border-radius: 0 !important;
-  padding: 0 0 0 24px;
-  color: #FAD000;
-}
-input[type="search"]::placeholder {
-  color: #A1A0E4;
-}
-.SearchInput__searchIcon {
-  color: #9797A2;
-}
-/* Fix Explicit label */
-.tl-explicit .label,
-.tl-premium .label {
-  color: var(--modspotify_secondary_fg);
-  border-color: var(--modspotify_scrollbar_fg_and_selected_row_bg) !important;
-  border-radius: 0;
-}
-/* TODO: Hover/Focus still doesn't look that great... */
-.tl-row:hover .tl-explicit .label,
-.tl-row:hover .tl-premium .label,
-.tl-row.selection-focus .tl-explicit .label,
-.tl-row.selection-focus .tl-premium .label {
-  border-color: var(--modspotify_scrollbar_fg_and_selected_row_bg) !important;
-}
-/* Toggle switch (For playlist download, etc) */
-.slider {
-  background-color: var(--modspotify_main_bg);
-  border-color: transparent;
-}
-/* Gradient overlay at top of page */
-.Header__background-color,
-.glue-page-header__background-color {
-  background-image: linear-gradient(to bottom, var(--modspotify_sidebar_and_player_bg), #2D2B55) !important;
-}
-/* Text on "follow/unfollow" buttons */
-.added .button-add:not(.button-icon-only):not(.button-icon-with-stroke),
-.button-add.added:not(.button-icon-only):not(.button-icon-with-stroke),
-.added .button-add:not(.button-icon-only):not(.button-icon-with-stroke).contextmenu-active,
-.added .button-add:not(.button-icon-only):not(.button-icon-with-stroke):not(:disabled):hover,
-.button-add.added:not(.button-icon-only):not(.button-icon-with-stroke).contextmenu-active,
-.button-add.added:not(.button-icon-only):not(.button-icon-with-stroke):not(:disabled):hover {
-  color: var(--modspotify_main_fg);
-}
-/* Recommendation buttons */
-button[data-button=add-recommendation] {
-  background-color: var(--modspotify_indicator_fg_and_button_bg);
-}
-.tracklist-album tr,
-.tracklist-chart tr,
-.tracklist-basic tr,
-.tracklist-playlist tr,
-.tracklist-podcast tr,
-.tracklist-popular tr,
-.tracklist-station tr,
-.tracklist-queue tr,
-.tracklist-search tr {
-  background-color: blue;
-}
-/* Recommendation buttons:hover */
-/* TODO: I think I actually like it better without the yellow...
-TODO: I forget what this even does now...
-.nft-enabled .view-player .now-playing-container .button-add.added,
-.nft-enabled .view-player .now-playing-container .button-add.added:not(:disabled):hover {
-	color: var(--modspotify_sidebar_indicator_and_hover_button_bg);
-}
-*/
-
-/* Test 1 */
-.test {
-  color: red;
-}
