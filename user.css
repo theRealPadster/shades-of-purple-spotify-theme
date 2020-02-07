@@ -23,7 +23,7 @@
 }
 .Header__background-color,
 .glue-page-header__background-color {
-  background-image: linear-gradient(to bottom, var(--modspotify_sidebar_and_player_bg), #2D2B55) !important;
+  background-image: linear-gradient(to bottom, var(--modspotify_main_bg), var(--modspotify_main_bg)) !important;
 }
 #remote-playback-bar span {
   color: var(--modspotify_dark_text);
@@ -76,7 +76,7 @@ TODO: I forget what this even does now...
   color: var(--modspotify_dark_text);
 }
 .slider {
-  background-color: var(--modspotify_main_bg);
+  background-color: var(--modspotify_sidebar_and_player_bg);
   border-color: transparent;
 }
 .button.button-blue {
