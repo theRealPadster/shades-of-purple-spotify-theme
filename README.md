@@ -21,8 +21,8 @@ spicetify apply
 ## Development
 
 * Run `spicetify watch` to keep Spicetify updating when CSS files change
-* Run `gulp watch` to live convert less to css
-* Edit the less files in the `src` directory
+* Run `npm run watch` to live convert less to css
+* Edit the less files in the `src` directory. `_theme.less` is the main entry point. 
 
 ## Credits
 * Colour scheme inspired by the [Shades of Purple VSCode theme](https://github.com/ahmadawais/shades-of-purple-vscode)

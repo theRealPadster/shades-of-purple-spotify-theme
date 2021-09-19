@@ -54,7 +54,6 @@ TODO: I forget what this even does now...
 	color: var(--modspotify_sidebar_indicator_and_hover_button_bg);
 }
 */
-
 .added .button-add:not(.button-icon-only):not(.button-icon-with-stroke),
 .button-add.added:not(.button-icon-only):not(.button-icon-with-stroke),
 .added .button-add:not(.button-icon-only):not(.button-icon-with-stroke).contextmenu-active,
@@ -88,7 +87,6 @@ TODO: I forget what this even does now...
   color: var(--modspotify_dark_text);
   background-color: var(--modspotify_indicator_fg_and_button_bg);
 }
-
 .button.button-green,
 .Button--style-green {
   color: var(--modspotify_dark_text);
