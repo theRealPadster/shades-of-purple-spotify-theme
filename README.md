@@ -21,7 +21,7 @@ spicetify apply
 ## Development
 
 * Run `spicetify watch` to keep Spicetify updating when CSS files change
-* Run `npm run watch` to live convert less to css
+* Run `yarn watch` to live convert less to css
 * Edit the less files in the `src` directory. `_theme.less` is the main entry point. 
 
 ## Credits
