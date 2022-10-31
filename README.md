@@ -1,5 +1,7 @@
 # Shades of Purple - Spotify theme
 
+This theme was only for Spicetify v1, and no longer works in v2. I no longer have the time to maintain it, so will be archiving it. If you enjoy the theme and would update it to work with v2, feel free to contact me or make a fork. 
+
 ## Screenshots
 
 ![shades-of-purple-screenshot](screenshot.png)
